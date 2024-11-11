@@ -1,4 +1,5 @@
 import { IUser } from './interfaces';
+import { InMemoryTable } from '../db_service';
 
 export class User implements IUser {
   constructor(login: string, password: string, version: number) {
@@ -16,3 +17,5 @@ export class User implements IUser {
   updatedAt: number;
   version: number;
 }
+
+export const UsersTable = new InMemoryTable();

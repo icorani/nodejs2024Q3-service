@@ -1,5 +1,5 @@
 export class InMemoryTable<T> {
-  private data: Record<number, T> = {};
+  private data: Record<number, T> = [];
 
   private _id = 0;
 
